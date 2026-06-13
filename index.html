@@ -5,25 +5,33 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I am Asad</title>
+  <title>Asad Saleem | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
+  <!-- Animated Background -->
+  <div id="bg-canvas"></div>
+
+  <!-- Navigation -->
   <nav id="desktop-nav">
-    <div class="logo">Asad Saleem</div>
+    <div class="logo">&lt;Asad /&gt;</div>
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+
+  <!-- Mobile Navigation -->
   <nav id="hamburger-nav">
-    <div class="logo">Asad Saleem</div>
+    <div class="logo">&lt;Asad /&gt;</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
@@ -33,326 +41,446 @@
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
   </nav>
+
+  <!-- Profile / Hero Section -->
   <section id="profile">
+    <div class="hero-glow"></div>
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Muhammad Asad Saleem</h1>
-      <p class="section__text__p2">Full Stack PHP Laravel Developer</p>
+      <h1 class="title gradient-text">Muhammad Asad Saleem</h1>
+      <p class="section__text__p2">Full-Stack Developer</p>
+      <p class="section__text__p3">Backend Focus &bull; Laravel &bull; React &bull; Node.js</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-          Download CV
+        <button class="btn btn-primary" onclick="window.open('./assets/resume.pdf')">
+          <i class="fas fa-download"></i> Download CV
         </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
+        <button class="btn btn-secondary" onclick="location.href='./#contact'">
+          <i class="fas fa-envelope"></i> Contact Info
         </button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/asad7868/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/asad78698/'" />
+        <a href="https://www.linkedin.com/in/asad7868/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/asad78698/" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- About Section -->
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
+    <h1 class="title gradient-text">About Me</h1>
     <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/about me.png" alt="Profile picture" class="about-pic" />
+        <div class="profile-img-frame">
+          <img src="./assets/about me.png" alt="Profile picture" class="about-pic" />
+        </div>
       </div>
       <div class="about-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience2.png" alt="Experience icon" class="icon" />
+          <div class="details-container glass-card">
+            <i class="fas fa-briefcase icon"></i>
             <h3>Experience</h3>
-            <p>1.5+ Year <br />Php Laravel Developer</p>
+            <p>2+ Years<br />Full Stack Development</p>
           </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <div class="details-container glass-card">
+            <i class="fas fa-graduation-cap icon"></i>
             <h3>Education</h3>
             <p>BS Computer Science</p>
             <p>IQRA University - 2024</p>
           </div>
         </div>
-        <div class="text-container">
-          <p style="text-align: justify;">
-
-            I am a PHP Laravel developer with experience in building scalable, secure, and optimized web applications. I
-            specialize in backend development using Laravel and Blade templates, and I have expertise in creating interactive,
-            responsive frontends with React.
-
-            As a computer science graduate, I enjoy solving complex problems and developing efficient, maintainable
-            solutions. I stay up-to-date with the latest trends in Laravel and modern web technologies to continuously
-            improve my skills.
-
+        <div class="text-container glass-card">
+          <p>
+            I am a <strong>Full-Stack Software Engineer (Backend Focus)</strong> with 2+ years of experience building scalable web applications, CRMs, and booking platforms.
+            I specialize in designing <strong>RESTful APIs</strong>, modern front-end interfaces, and robust database architectures using <strong>Laravel</strong>, <strong>React</strong>, and <strong>Node.js</strong>.
+          </p>
+          <p>
+            I have worked on real-world systems including hotel booking, flight booking, and car rental platforms, with a strong focus on <strong>performance</strong>, <strong>scalability</strong>, and <strong>clean architecture</strong>.
+            As a computer science graduate, I thrive on solving complex problems and writing clean, maintainable code.
           </p>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <!-- <p class="section__text__p1">Explore My</p> -->
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Full Stack Developer <br> <span style="font-size: 18px;">CafeVista Pvt
-              Ltd
-            </span></h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Laravel</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Flask</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MYSQL DB</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JQuery</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MONGODB </h3>
-                <p>Basics</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Wordpress Theme & Plugin Customization</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Php Laravel Developer <br> <span style="font-size: 18px;">Systellex
-            </span></h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Laravel</h3>
-                <p>Experiencd</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PHP</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Bootstrap</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Blade Templates</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>AJAX</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </article>
-            <article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Vue JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </article>
-            <article>
-          </div>
-        </div>
-      </div>
+    <div class="scroll-indicator">
+      <a href="#experience"><i class="fas fa-chevron-down"></i></a>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <p class="section__text__p1">My Professional</p>
+    <h1 class="title gradient-text">Experience</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/jobportal.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Job Portal</h2>
-          <div>
-            <p style="text-align: justify;">CareerVibe is a job portal website made with Laravel, Bootstrap, Jquery and
-              Ajax. This website allow user to create account and post jobs. They can also apply for the jobs posted by
-              other users.</p>
-          </div>
-          <div style="margin-top: 8px;" class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/asad78698/jobportal'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/asad78698/jobportal'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/websecurity.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Web Security Testing</h2>
-          <div>
-            <p style="text-align: justify;">Web Security Testing is python based web app created using flask, bootstrap,
-              BS4 and other python libraries. This website allow users to scan their website and find vulnerabilities
-              and then it suggest the steps to overcome those issues.</p>
-          </div>
-          <div style="margin-top: 8px;" class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/asad78698/websecurtiytesting'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/asad78698/websecurtiytesting'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/nike.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Nike Landing Page</h2>
-          <div>
-            <p style="text-align: justify;">Nike landing page is website that is made using React JS, Vite and Tailwind
-              CSS. This website is about nike products where i created different section for producs such as price,
-              features, and more.</p>
-          </div>
-          <div style="margin-top: 8px;" class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/asad78698/nikeapp'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://nikeapp-seven.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/aixgen.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Aixgen CRM Project</h2>
-          <div>
-            <p style="text-align: justify;">Aixgen is a CRM developed using React.js and Laravel. It helps companies integrate and streamline their business operations by allowing them to add employees, create sales records, manage reports, and use admin panels to monitor and analyze business growth.</p>
-          </div>
-          <div style="margin-top: 8px;" class="btn-container">
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/asad78698/nikeapp'">
-              Github
-            </button> -->
-            <button class="btn btn-color-2 project-btn " style="margin-top: 10px;" onclick="location.href='https://aixgentest.systellex.net/sales/presales'">
-              Live Demo
-            </button>
+      <div class="timeline">
+        <!-- Experience 1: Purple Technologies (Newest) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">December 2025 - Present</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <h2>Full Stack Developer</h2>
+              <span class="company">Purple Technologies</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Payment Integration</span>
+              <span class="skill-tag">Booking Systems</span>
+            </div>
+            <p>Developing and maintaining <strong>hotel booking, flight booking, and car rental platforms</strong> using React and Laravel. Building scalable RESTful APIs and integrating third-party services (payments, booking engines, etc.). Managing complex booking workflows, availability systems, and pricing logic. Improving UI/UX performance using modern React practices with a modular, reusable component-based architecture.</p>
           </div>
         </div>
 
+        <!-- Experience 2: SysTellex Inc. -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">September 2024 - December 2025</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <h2>Software Developer</h2>
+              <span class="company">SysTellex Inc.</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">Eloquent ORM</span>
+              <span class="skill-tag">ERD Modeling</span>
+            </div>
+            <p>Successfully migrated a <strong>custom CRM system from Core PHP to Laravel</strong>, improving scalability and maintainability. Maintained and enhanced the CRM, ensuring high performance and stability. Designed efficient and normalized databases using ERD modeling. Developed and integrated RESTful APIs for seamless React front-end communication. Utilized Laravel Eloquent ORM and Query Builder for database operations. Implemented secure <strong>JWT authentication</strong> and built custom middleware for access control.</p>
+          </div>
+        </div>
+
+        <!-- Experience 3: CafeVista (Pvt) Ltd -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">January 2024 - July 2024</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <h2>Full Stack Developer</h2>
+              <span class="company">CafeVista (Pvt) Ltd</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Blade</span>
+            </div>
+            <p>Developed and integrated <strong>Laravel APIs with React and Vue.js</strong> front-end components. Implemented user authentication and role-based access control using Laravel. Designed and managed MySQL and MongoDB databases for scalable storage solutions. Built dynamic views using Blade templates and enhanced UI/UX with Bootstrap and Tailwind CSS.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    <div class="scroll-indicator">
+      <a href="#skills"><i class="fas fa-chevron-down"></i></a>
+    </div>
   </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <p class="section__text__p1">My Technical</p>
+    <h1 class="title gradient-text">Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-category glass-card">
+        <div class="skill-category-header">
+          <i class="fab fa-node-js"></i>
+          <h3>Backend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span>Node.js</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>Express.js</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span>Laravel</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>PHP</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span>Flask</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          <div class="skill-item"><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category glass-card">
+        <div class="skill-category-header">
+          <i class="fab fa-react"></i>
+          <h3>Frontend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span>React.js</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span>Next.js</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          <div class="skill-item"><span>Vue.js</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+          <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>jQuery</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+          <div class="skill-item"><span>Bootstrap</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category glass-card">
+        <div class="skill-category-header">
+          <i class="fas fa-database"></i>
+          <h3>Database & Tools</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span>MySQL</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span>MongoDB</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          <div class="skill-item"><span>PostgreSQL</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+          <div class="skill-item"><span>Git/GitHub</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>Docker</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+          <div class="skill-item"><span>Linux</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Projects Section with Slider -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title gradient-text">Projects</h1>
+    
+    <div class="projects-slider-container">
+      <button class="slider-btn slider-btn-left" onclick="moveSlider(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="projects-slider" id="projectsSlider">
+        <!-- Project 1: Job Portal -->
+        <div class="project-slide">
+          <div class="project-card glass-card">
+            <div class="project-image-slider">
+              <div class="project-img-wrapper" data-images='["jobportal.png","jobportal2.png","jobportal3.png"]'>
+                <img src="./assets/jobportal.png" alt="Job Portal Screenshot" class="project-img" />
+                <div class="img-nav">
+                  <button class="img-nav-btn prev-img"><i class="fas fa-chevron-left"></i></button>
+                  <span class="img-counter">1/3</span>
+                  <button class="img-nav-btn next-img"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Job Portal - CareerVibe</h2>
+              <div class="project-tech-tags">
+                <span>Laravel</span>
+                <span>Bootstrap</span>
+                <span>jQuery</span>
+                <span>AJAX</span>
+                <span>MySQL</span>
+              </div>
+              <p>A full-featured job portal where users can create accounts, post job listings, and apply for positions. Built with Laravel backend, Bootstrap frontend, and AJAX for seamless interactions.</p>
+              <div class="project-links">
+                <a href="https://github.com/asad78698/jobportal" target="_blank" class="btn btn-small btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/asad78698/jobportal" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Web Security Testing -->
+        <div class="project-slide">
+          <div class="project-card glass-card">
+            <div class="project-image-slider">
+              <div class="project-img-wrapper" data-images='["websecurity.png","websecurity2.png","websecurity3.png"]'>
+                <img src="./assets/websecurity.png" alt="Web Security Testing" class="project-img" />
+                <div class="img-nav">
+                  <button class="img-nav-btn prev-img"><i class="fas fa-chevron-left"></i></button>
+                  <span class="img-counter">1/3</span>
+                  <button class="img-nav-btn next-img"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Web Security Testing Tool</h2>
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>BeautifulSoup</span>
+                <span>Bootstrap</span>
+              </div>
+              <p>A Python-based web application that scans websites for security vulnerabilities. It identifies common issues like SQL injection, XSS, and CSRF, then provides actionable remediation steps.</p>
+              <div class="project-links">
+                <a href="https://github.com/asad78698/websecurtiytesting" target="_blank" class="btn btn-small btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/asad78698/websecurtiytesting" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Nike Landing Page -->
+        <div class="project-slide">
+          <div class="project-card glass-card">
+            <div class="project-image-slider">
+              <div class="project-img-wrapper" data-images='["nike.png","nike2.png","nike3.png"]'>
+                <img src="./assets/nike.png" alt="Nike Landing Page" class="project-img" />
+                <div class="img-nav">
+                  <button class="img-nav-btn prev-img"><i class="fas fa-chevron-left"></i></button>
+                  <span class="img-counter">1/3</span>
+                  <button class="img-nav-btn next-img"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Nike Landing Page</h2>
+              <div class="project-tech-tags">
+                <span>React.js</span>
+                <span>Vite</span>
+                <span>Tailwind CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <p>A modern, responsive landing page for Nike products built with React and Vite. Features product showcases, pricing sections, and interactive UI components with smooth animations.</p>
+              <div class="project-links">
+                <a href="https://github.com/asad78698/nikeapp" target="_blank" class="btn btn-small btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://nikeapp-seven.vercel.app/" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Aixgen CRM -->
+        <div class="project-slide">
+          <div class="project-card glass-card">
+            <div class="project-image-slider">
+              <div class="project-img-wrapper" data-images='["aixgen.png","aixgen2.png","aixgen3.png"]'>
+                <img src="./assets/aixgen.png" alt="Aixgen CRM" class="project-img" />
+                <div class="img-nav">
+                  <button class="img-nav-btn prev-img"><i class="fas fa-chevron-left"></i></button>
+                  <span class="img-counter">1/3</span>
+                  <button class="img-nav-btn next-img"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Aixgen CRM</h2>
+              <div class="project-tech-tags">
+                <span>React.js</span>
+                <span>Laravel</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+              </div>
+              <p>A full-stack CRM platform built with React and Laravel. Features employee management, sales tracking, report generation, and admin analytics dashboards to monitor business growth.</p>
+              <div class="project-links">
+                <a href="https://aixgentest.systellex.net/sales/presales" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Node.js API Server -->
+        <div class="project-slide">
+          <div class="project-card glass-card">
+            <div class="project-image-slider">
+              <div class="project-img-wrapper" data-images='["jobportal.png","nodeapi.png"]'>
+                <img src="./assets/jobportal.png" alt="Node.js REST API" class="project-img" />
+                <div class="img-nav">
+                  <button class="img-nav-btn prev-img"><i class="fas fa-chevron-left"></i></button>
+                  <span class="img-counter">1/2</span>
+                  <button class="img-nav-btn next-img"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Node.js REST API Boilerplate</h2>
+              <div class="project-tech-tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>JWT Auth</span>
+                <span>Docker</span>
+              </div>
+              <p>A production-ready REST API boilerplate built with Node.js and Express. Features JWT authentication, MongoDB integration, rate limiting, logging, and Docker containerization.</p>
+              <div class="project-links">
+                <a href="https://github.com/asad78698/jobportal" target="_blank" class="btn btn-small btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/asad78698/jobportal" target="_blank" class="btn btn-small btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn slider-btn-right" onclick="moveSlider(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+
+    <div class="scroll-indicator">
+      <a href="#contact"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:techasad786@gmail.com">techasad786@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/asad7868/">LinkedIn</a></p>
+    <h1 class="title gradient-text">Contact Me</h1>
+    <div class="contact-wrapper">
+      <div class="contact-card glass-card">
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-detail">
+            <h3>Email</h3>
+            <a href="mailto:techasad786@gmail.com">techasad786@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="contact-detail">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/asad7868/" target="_blank">linkedin.com/in/asad7868</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact-detail">
+            <h3>GitHub</h3>
+            <a href="https://github.com/asad78698/" target="_blank">github.com/asad78698</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="footer-content">
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
-    </nav>
-    <p>Copyright &#169; 2024 Asad Saleem. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/asad7868/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/asad78698/" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="footer-text">Copyright &copy; 2025 Asad Saleem. Built with <i class="fas fa-heart"></i></p>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 
